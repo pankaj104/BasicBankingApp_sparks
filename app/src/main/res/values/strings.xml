@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Banking</string>
+    <string name="title_activity_customer_list">CustomerList</string>
+    <string name="landing"> Welcome\n to \n this \n Sample\n Banking\n App \n</string>
+</resources>

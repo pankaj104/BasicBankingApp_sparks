@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerList">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/recyclerView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/recyclerView"
+        android:layout_marginBottom="3dp"
+        android:textSize="55sp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/sttext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4807BC"
+            android:textSize="23sp"
+            android:text="Send: "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/person1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:textColor="#0B0E0D"
+            android:textSize="23dp"
+
+           />
+        <TextView
+            android:id="@+id/sttext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Recieve: "
+            android:textSize="23sp"
+            android:textColor="#4404B6"
+            android:textStyle="bold"/>
+        <TextView
+
+            android:id="@+id/person2"
+            android:textColor="#0B0E0D"
+            android:textSize="20dp"
+            android:layout_marginRight="5sp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+           />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+       app:layout_goneMarginTop="12dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
