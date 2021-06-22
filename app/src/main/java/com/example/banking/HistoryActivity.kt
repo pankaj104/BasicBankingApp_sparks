@@ -24,21 +24,25 @@ class HistoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
-        helper = MyDBHelper(applicationContext)
-        db = helper .readableDatabase
-recyclerView=findViewById(R.id.recyclerView)
+recyclerView.layoutManager=LinearLayoutManager(this)
+     //   val adapter: HistoryAdapter= HistoryAdapter(this,CustomerList)
 
-        layoutManager = LinearLayoutManager(this)
-        //adapter = HistoryAdapter(this)
-
-//        recyclerView.layoutManager=LinearLayoutManager(this)
-//      adapter1= HistoryAdapter(this)
-        //recyclerView.adapter=adapter
-        //fetchData()
-//recyclerAdapter=recyclerAdapter(Model)
     }
     private fun fetchData(){
 
         }
       //  adapter.updateList(list)
     }
+
+//        helper = MyDBHelper(applicationContext)
+//        db = helper .readableDatabase
+//recyclerView=findViewById(R.id.recyclerView)
+//
+//        layoutManager = LinearLayoutManager(this)
+//adapter = HistoryAdapter(this)
+
+//        recyclerView.layoutManager=LinearLayoutManager(this)
+//      adapter1= HistoryAdapter(this)
+//recyclerView.adapter=adapter
+//fetchData()
+//recyclerAdapter=recyclerAdapter(Model)

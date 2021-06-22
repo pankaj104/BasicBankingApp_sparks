@@ -37,7 +37,7 @@ class MyDBHelper(context: Context): SQLiteOpenHelper(context,"CUSTOMERS_DATA",nu
         db?.execSQL("INSERT INTO CUSTOMERS(FNAME,LNAME,EMAIL,BALANCE) VALUES('Pahal','Beck','pahal354@gmail.com',5000)")
         db?.execSQL("INSERT INTO CUSTOMERS(FNAME,LNAME,EMAIL,BALANCE) VALUES('Jyoti','Singh','jyoti325@gmail.com',5000)")
         db?.execSQL("INSERT INTO CUSTOMERS(FNAME,LNAME,EMAIL,BALANCE) VALUES('Laksh','Singh','laksh2563@gmail.com',10000)")
-        db?.execSQL("INSERT INTO CUSTOMERS(FNAME,LNAME,EMAIL,BALANCE) VALUES('Sanika','Khadkikar','sample@xyz',10000)")
+        db?.execSQL("INSERT INTO CUSTOMERS(FNAME,LNAME,EMAIL,BALANCE) VALUES('Sanika','Khadkikar','sanika242@gmail.com',10000)")
         db?.execSQL("INSERT INTO CUSTOMERS(FNAME,LNAME,EMAIL,BALANCE) VALUES('Pahal','Jain','pahal4534@gmail.com',10000)")
         db?.execSQL("INSERT INTO CUSTOMERS(FNAME,LNAME,EMAIL,BALANCE) VALUES('Kumar','Ji','hitpalay3545@gmail.com.com',10000)")
         db?.execSQL("INSERT INTO CUSTOMERS(FNAME,LNAME,EMAIL,BALANCE) VALUES('Yash','Singh','yash2309@gmail.com',10000)")

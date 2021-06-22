@@ -120,8 +120,6 @@ class CustomerList : AppCompatActivity(),CustomerItemClicked {
             }
             updateLayout()
         }
-
-
         builder.show()
     }
 
@@ -234,7 +232,6 @@ class CustomerList : AppCompatActivity(),CustomerItemClicked {
         for(i in mapp.values)
         {
             tmplist.add(i)
-
 
         }
         adapter.updateList(tmplist)
